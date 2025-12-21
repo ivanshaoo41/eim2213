@@ -1,0 +1,98 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, #ffd1dc, #fff0f5);
+  margin: 0;
+  text-align: center;
+}
+
+.lock {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lock input {
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 25px;
+  border: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.lock button {
+  padding: 12px 30px;
+  background: #ff5fa2;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.container {
+  padding: 24px;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: #ff5fa2;
+}
+
+.subtitle {
+  color: #b03060;
+  font-size: 18px;
+}
+
+.counter {
+  font-size: 20px;
+  color: #ff4081;
+  margin-bottom: 25px;
+}
+
+.gift-btn {
+  width: 100%;
+  padding: 18px;
+  font-size: 20px;
+  background: #ff5fa2;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  width: 90%;
+  max-width: 320px;
+  margin: 12px auto;
+  border-radius: 20px;
+  display: block;
+}
+
+.tap {
+  margin-top: 30px;
+  color: #ff69b4;
+}
+
+/* FLOATING HEARTS */
+.heart {
+  position: fixed;
+  font-size: 24px;
+  animation: floatUp 2s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
