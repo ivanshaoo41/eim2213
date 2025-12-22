@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Happy Birthday Ei Meh 💕</title>
+  <title>Ei Meh 💕</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,32 +20,24 @@
 <!-- MAIN CONTENT -->
 <div id="mainContent" class="container hidden">
 
-  <h1>Happy Birthday, Ei Meh 🎂💕</h1>
-  <p class="subtitle">I love you so much</p>
+  <h1>Hi Ei Meh! 🎉💕</h1>
+  <p class="subtitle">Time we’ve been together ❤️</p>
+  <div id="counter" class="digital-counter"></div>
 
-  <h2>⏳ We’ve Been Together For</h2>
-  <p id="counter" class="counter"></p>
-
-  <button onclick="openGift()" class="gift-btn">
-    🎁 Open Your Gift
-  </button>
+  <button onclick="openGift()" class="gift-btn">🎁 Open Your Gift</button>
 
   <div id="gift" class="hidden">
     <h2>💌 A Message From Me</h2>
-    <p>
-      Every day with you feels special.
-      Thank you for loving me the way you do.
-      I love you more than words can explain ❤️
-    </p>
+    <p>Every day with you feels special. Thank you for loving me the way you do. I love you more than words can explain ❤️</p>
   </div>
 
   <h2>📸 Our Memories</h2>
   <div class="gallery">
-    <img src="pic1.jpg">
-    <img src="pic2.jpg">
-    <img src="pic3.jpg">
+    <img src="images/pic1.jpg" alt="Memory 1" onclick="showCaption(this, 'Our first date ❤️')">
+    <img src="images/pic2.jpg" alt="Memory 2" onclick="showCaption(this, 'Best trip together 🌸')">
+    <img src="images/pic3.jpg" alt="Memory 3" onclick="showCaption(this, 'Cute moment 💗')">
   </div>
-
+  <p id="caption" class="caption"></p>
 
 </div>
 
