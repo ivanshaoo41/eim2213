@@ -30,13 +30,31 @@
     <p>I love you so much Ei Meh. I hope you have an amazing day today!</p>
   </div>
 
-  <h2>📸 Our Memories</h2>
-  <div class="gallery">
-    <img src="images/pic1.JPG" alt="Memory 1" onclick="showCaption(this, 'Apple Picking ❤️')">
-    <img src="images/pic2.JPG" alt="Memory 2" onclick="showCaption(this, 'E-Couple 🌸')">
-    <img src="images/pic3.JPG" alt="Memory 3" onclick="showCaption(this, 'I Love You 💗')">
+
+  <!-- SWIPE PHOTO ALBUM -->
+  <div class="slider">
+    <div class="slides" id="slides">
+      <div class="slide">
+        <img src="images/pic1.JPG" alt="Memory 1">
+        <p>Apple Picking ❤️</p>
+      </div>
+      <div class="slide">
+        <img src="images/pic2.JPG" alt="Memory 2">
+        <p>E-Couple 🌸</p>
+      </div>
+      <div class="slide">
+        <img src="images/pic3.JPG" alt="Memory 3">
+        <p>I Love You 💗</p>
+      </div>
+    </div>
   </div>
-  <p id="caption" class="caption"></p>
+
+  <!-- DOTS -->
+  <div class="dots">
+    <span onclick="goToSlide(0)"></span>
+    <span onclick="goToSlide(1)"></span>
+    <span onclick="goToSlide(2)"></span>
+  </div>
 
 </div>
 
