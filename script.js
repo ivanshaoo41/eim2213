@@ -1,7 +1,7 @@
 /* PASSCODE */
 function checkPasscode() {
   const input = document.getElementById("passcode").value;
-  if (input === "1230") {
+  if (input === "0789") {
     document.getElementById("lockScreen").style.display = "none";
     document.getElementById("mainContent").classList.remove("hidden");
     startCounter();
